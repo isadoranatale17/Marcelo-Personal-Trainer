@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f4f4f4 0%, #ffe680 100%);
+    color: #222;
+    line-height: 1.6;
+    font-size: 16px;
+    min-height: 100vh;
+}
+
+.centralizada {
+    width: 100%;
+    max-width: 700px;
+    margin: 30px auto;
+    background: linear-gradient(90deg, #ff8c00, #fbff00);
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(255, 107, 0, 0.5);
+    color: white;
+    user-select: none;
+}
+
+.logo-site {
+    width: 160px;
+    height: auto;
+    margin-bottom: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    image-rendering: auto;
+    filter: drop-shadow(0 0 3px rgba(0,0,0,0.4));
+}
+
+section {
+    width: 90%;
+    max-width: 900px;
+    margin: 60px auto 50px;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #c4631e;
+    font-weight: 700;
+    font-size: 2.4rem;
+    letter-spacing: 1.1px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+p {
+    font-size: 18px;
+    margin: 10px 0;
+    text-align: center;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #444;
+}
+
+.sobre-marcelo {
+    background: linear-gradient(120deg, #ff8c00, #ffbb00);
+    color: #222;
+    padding: 40px 20px;
+    border-radius: 15px;
+}
+
+.sobre-conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+.sobre-texto {
+    flex: 1 1 300px;
+    min-width: 280px;
+}
+
+.sobre-texto h1 {
+    color: #fff;
+    margin-bottom: 15px;
+    text-align: left;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+}
+
+.sobre-texto p {
+    font-size: 18px;
+    text-align: left;
+    line-height: 1.7;
+    color: #eee;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.sobre-imagem img {
+    width: 320px;
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    transition: transform .3s ease;
+}
+
+.sobre-imagem img:hover {
+    transform: scale(1.05);
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+}
+
+.galeria img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    transition: transform .3s ease;
+    cursor: pointer;
+}
+
+.galeria img:hover {
+    transform: scale(1.07);
+}
+
+.consultoria {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.consultoria h1 {
+    margin-top: 40px;
+    color: #ffbb00;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.consultoria p {
+    max-width: 600px;
+    margin: 10px auto 25px;
+    font-size: 18px;
+    color: #333;
+}
+
+.botao-whatsapp {
+    display: inline-block;
+    margin: 15px 15px 40px 15px;
+    padding: 15px 30px;
+    background-color: #25D366;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 6px 15px rgba(37, 211, 102, 0.5);
+    user-select: none;
+}
+
+.botao-whatsapp:hover {
+    background-color: #1ebe5b;
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(30, 190, 91, 0.7);
+    cursor: pointer;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 16px;
+    letter-spacing: 0.6px;
+    user-select: none;
+}
+
+@media (max-width: 768px) {
+    .sobre-conteudo {
+        flex-direction: column;
+    }
+    
+    .sobre-texto, .sobre-imagem {
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    .sobre-texto h1, .sobre-texto p {
+        text-align: center;
+    }
+
+    .botao-whatsapp {
+        width: 80%;
+        font-size: 20px;
+        padding: 15px;
+        margin: 15px auto 40px auto;
+        display: block;
+    }
+}
